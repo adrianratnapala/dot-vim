@@ -1,0 +1,24 @@
+set expandtab
+set ai
+set foldmethod=indent
+map m :make<CR><CR>
+map E :e .<CR>
+set gfn=FreeMono\ Bold\ 12 
+syntax on
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+
+nnoremap <C-Up> :silent! let &guifont = substitute(
+ \ &guifont,
+ \ ' \zs\d\+',
+ \ '\=eval(submatch(0)+1)',
+ \ '')<CR><CR>
+nnoremap <C-Down> :silent! let &guifont = substitute(
+ \ &guifont,
+ \ ' \zs\d\+',
+ \ '\=eval(submatch(0)-1)',
+ \ '')<CR><CR>
+
