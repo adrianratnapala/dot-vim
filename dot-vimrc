@@ -3,7 +3,7 @@ set ai
 set foldmethod=indent
 map m :make<CR><CR>
 map E :e .<CR>
-set gfn=FreeMono\ Bold\ 12 
+set gfn=FreeMono\ Bold\ 12
 syntax on
 
 set nobackup
@@ -22,3 +22,24 @@ nnoremap <C-Down> :silent! let &guifont = substitute(
  \ '\=eval(submatch(0)-1)',
  \ '')<CR><CR>
 
+
+"
+" Thanks to Frew at
+" http://stackoverflow.com/questions/164847/what-is-in-your-vimrc
+"
+set nocompatible
+set showcmd
+
+" Automatically cd into the directory that the file is in
+autocmd BufEnter * execute "chdir ".escape(expand("%:p:h"), ' ')
+
+" Remove any trailing whitespace that is in the file
+autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+
+set wildmenu                    "tab completion for VIM commands
+set wildmode=list:longest,full  "make it work like bash
+set incsearch
+set number
+set backspace=2                 " backspace through linebreaks
+
+nnoremap ; :
