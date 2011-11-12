@@ -44,3 +44,15 @@ set number                      "line numbers
 set backspace=2                 " backspace through linebreaks
 
 nnoremap ; :
+
+
+"
+" Make ctags etc. work.
+"
+"  * this is file 835MB big and is build using:
+"  * ctags -R -f ~/.vim/systags /usr/include /usr/local/include
+"set tags+=~/.vim/systags
+
+autocmd FileType c set omnifunc=ccomplete#Complete
+
+
