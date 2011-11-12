@@ -55,4 +55,5 @@ nnoremap ; :
 
 autocmd FileType c set omnifunc=ccomplete#Complete
 
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
