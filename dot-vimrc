@@ -1,7 +1,7 @@
 set expandtab
 set ai
 set foldmethod=indent
-map m :make<CR><CR>
+map <CR> :make<CR><CR>
 map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
 syntax on
