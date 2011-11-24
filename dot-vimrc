@@ -60,6 +60,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 
+
 "
 " More
 "
@@ -85,4 +86,9 @@ set backspace=indent,eol,start  " as above, but clearer
 set ignorecase " hmm, no sure about this one ....
 
 
+"
+" Fix quickfix.
+"
+
+set errorformat=%f:%l:%c:%m,%*[^:]:%f:%l:%m
 
