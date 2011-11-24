@@ -75,3 +75,8 @@ call pathogen#runtime_append_all_bundles()
 
 " nvie chooses comma, I like space
 let mapleader=" "
+
+" <SPACE>ev --> edit ~/.vimrc, <SPACE>so --> source it
+nmap <silent> <leader>ev :e $MYVIMRC<CR>G
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
