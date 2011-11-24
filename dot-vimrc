@@ -63,3 +63,13 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 " More
 "
 set nowrap
+
+
+"
+" Ideas snarfed from http://nvie.com/posts/how-i-boosted-my-vim/
+"
+
+call pathogen#infect()
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
