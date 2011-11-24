@@ -1,10 +1,11 @@
 set expandtab
 set ai
 set foldmethod=indent
-map <CR> :make<CR><CR>
 map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
 syntax on
+
+autocmd filetype c map <CR> :make<CR><CR>:cw<CR>
 
 set nobackup
 set nowritebackup
