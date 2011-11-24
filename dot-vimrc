@@ -53,8 +53,9 @@ nnoremap ; :
 "  * ctags -R -f ~/.vim/systags /usr/include /usr/local/include
 "set tags+=~/.vim/systags
 
+" make omni-complete clever (knows about ctags and more)
 autocmd FileType c set omnifunc=ccomplete#Complete
-
+" tab completion: a heavyweight way to TAB to omni-complete
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 
