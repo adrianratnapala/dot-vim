@@ -80,3 +80,8 @@ let mapleader=" "
 nmap <silent> <leader>ev :e $MYVIMRC<CR>G
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+set backspace=indent,eol,start  " as above, but clearer
+set ignorecase " hmm, no sure about this one ....
+
+
+
