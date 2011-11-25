@@ -5,7 +5,7 @@ map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
 syntax on
 
-autocmd filetype c map <CR> :make<CR><CR>:cw<CR>
+autocmd filetype c,ch,cpp map <CR> :make<CR><CR>:cw<CR>
 
 set nobackup
 set nowritebackup
