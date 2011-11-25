@@ -5,6 +5,8 @@ map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
 syntax on
 
+set makeprg=make\\\|&~/.vim/exansi
+
 autocmd filetype c,ch,cpp map <CR> :make<CR><CR>:cw<CR>
 
 set nobackup
@@ -90,5 +92,5 @@ set ignorecase " hmm, no sure about this one ....
 " Fix quickfix.
 "
 
-set errorformat=%f:%l:%c:%m,%*[^:]:%f:%l:%m
+set errorformat=FAILED:\ %f:%l:%m,%f:%l:%c:%m,%*[^:]:%f:%l:%mfailed.
 
