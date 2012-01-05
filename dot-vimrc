@@ -44,7 +44,7 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 set wildmenu                    "tab completion for VIM commands
 set wildmode=list:longest,full  "make it work like bash
 set incsearch                   "incremental search
-set number                      "line numbers
+"set number                      "line numbers
 set backspace=2                 " backspace through linebreaks
 
 nnoremap ; :
