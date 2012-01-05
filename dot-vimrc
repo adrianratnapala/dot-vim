@@ -8,6 +8,7 @@ syntax on
 set makeprg=make\\\|&~/.vim/exansi
 
 autocmd filetype c,ch,cpp map <CR> :make<CR><CR>:cw<CR>
+au BufNewFile,BufRead *.less set filetype=css
 
 set nobackup
 set nowritebackup
