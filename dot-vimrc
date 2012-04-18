@@ -10,6 +10,8 @@ set makeprg=make\\\|&~/.vim/exansi
 autocmd filetype c,ch,cpp map <CR> :make<CR><CR>:cw<CR>
 au BufNewFile,BufRead *.less set filetype=css
 
+set encoding=utf-8
+
 set nobackup
 set nowritebackup
 set noswapfile
@@ -55,15 +57,18 @@ nnoremap ; :
 "
 " Make ctags etc. work.
 "
-"  * this is file 835MB big and is build using:
-"  * ctags -R -f ~/.vim/systags /usr/include /usr/local/include
-"set tags+=~/.vim/systags
+"  * this is file >700MB big and is built using:
+"  * ctags -R -f ~/.vim/sys-c-tags /usr/include /usr/local/include
+if filereadable("~/.vim/sys-c-tags")
+        set tags+=~/.vim/sys-c-tags
+endif
 
 " make omni-complete clever (knows about ctags and more)
 autocmd FileType c set omnifunc=ccomplete#Complete
 " tab completion: a heavyweight way to TAB to omni-complete
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
+set completeopt=longest,menu
 
 
 "
