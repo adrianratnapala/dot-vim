@@ -1,0 +1,1 @@
+/home/raka/go/misc/vim/autoload/go/complete.vim
