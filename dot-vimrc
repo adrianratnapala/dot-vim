@@ -100,7 +100,8 @@ set backspace=indent,eol,start  " as above, but clearer
 " Fix quickfix.
 "
 
-set errorformat=FAILED:\ %f:%l:%m,%f:%l:%c:%m,%*[^:]:%f:%l:%mfailed.
+set errorformat=FAILED:\ %f:%l:%m,%f:%l:%c:%m,%f:%l:%m,%*[^:]:%f:%l:%mfailed.
+"set errorformat=%*[^:]:%f:%l:%mfailed.
 
 "
 " Per-directory .vimr (see http://damien.lespiau.name/blog/2009/03/18/per-project-vimrc/)
