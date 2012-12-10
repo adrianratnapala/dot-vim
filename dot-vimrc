@@ -3,6 +3,8 @@ set ai
 set foldmethod=indent
 map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
+set shell=/bin/sh
+
 syntax on
 
 set makeprg=make\\\|&~/.vim/exansi
