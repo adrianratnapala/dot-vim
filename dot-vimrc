@@ -69,9 +69,9 @@ nnoremap ; :
 "
 "  * this is file >700MB big and is built using:
 "  * ctags -R -f ~/.vim/sys-c-tags /usr/include /usr/local/include
-if filereadable("~/.vim/sys-c-tags")
-        set tags+=~/.vim/sys-c-tags
-endif
+"if filereadable(expand("~/.vim/sys-c-tags"))
+"        set tags+=~/.vim/sys-c-tags
+"endif
 
 " make omni-complete clever (knows about ctags and more)
 autocmd FileType c set omnifunc=ccomplete#Complete
