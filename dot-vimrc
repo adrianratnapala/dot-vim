@@ -11,7 +11,7 @@ set spell spelllang=en_gb
 "set rtp+=/home/raka/go/misc/vim
 "filetype plugin indent on
 "syntax on
-
+au BufRead,BufNewFile *.xaml setfiletype xml
 
 syntax on
 
