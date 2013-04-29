@@ -5,8 +5,8 @@ map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
 set shell=/bin/sh
 
-
-:set spell spelllang=en_gb
+set listchars=tab:>.,trail:-
+set spell spelllang=en_gb
 
 "set rtp+=/home/raka/go/misc/vim
 "filetype plugin indent on
@@ -126,5 +126,6 @@ set secure			" disable unsafe commands in local .vimrc files
 set hidden
 nmap <silent> <leader>n :bn <CR>
 
-
+set lcs=tab:>-,trail:-
+set list
 
