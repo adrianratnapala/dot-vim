@@ -125,6 +125,8 @@ set secure			" disable unsafe commands in local .vimrc files
 "
 set hidden
 nmap <silent> <leader>n :bn <CR>
+nmap <silent> <leader>p :bp <CR>
+nmap <silent> <leader>k :BD <CR>
 
 set lcs=tab:>-,trail:-
 set list
