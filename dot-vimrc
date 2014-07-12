@@ -15,10 +15,12 @@ au BufRead,BufNewFile *.xaml setfiletype xml
 
 syntax on
 
-" set makeprg=make\\\|&~/.vim/exansi
+"set makeprg=make\\\|&~/.vim/exansi
 set makeprg=make
+"autocmd filetype go set makeprg=go\ build&&\go\ test
+autocmd filetype go set noexpandtab
 
-autocmd filetype c,ch,cpp map <CR> :make<CR><CR>:cw<CR>
+autocmd filetype c,ch,cpp,go map <CR> :make<CR><CR>:cw<CR>
 autocmd filetype tex map <CR> :silent make\|redraw!\|cw<CR>
 "autocmd filetype tex map <CR> :make<CR><CR>:cw<CR>
 
@@ -114,7 +116,7 @@ set backspace=indent,eol,start  " as above, but clearer
 " Fix quickfix.
 "
 
-"set errorformat=FAILED:\ %f:%l:%m,%f:%l:%c:%m,%f:%l:%m,%*[^:]:%f:%l:%mfailed.
+set errorformat=FAILED:\ %f:%l:%m,%f:%l:%c:%m,%f:%l:%m,%*[^:]:%f:%l:%mfailed.
 "set errorformat=%*[^:]:%f:%l:%mfailed.
 
 "
