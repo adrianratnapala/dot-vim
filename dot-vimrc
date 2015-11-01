@@ -5,6 +5,8 @@ map E :e .<CR>
 set gfn=FreeMono\ Bold\ 12
 set shell=/bin/sh
 
+set mouse=a
+
 set listchars=tab:>.,trail:-
 set spell spelllang=en_gb
 
